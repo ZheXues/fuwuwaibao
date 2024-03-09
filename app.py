@@ -4,6 +4,7 @@ from werkzeug.utils import secure_filename
 import os
 import joblib
 import pandas as pd
+from model.my_model import MyModel
 model = joblib.load('model/gradient_boosting_model.pkl')
 app = Flask(__name__)
 CORS(app)  # 允许跨域请求
